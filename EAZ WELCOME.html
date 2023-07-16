@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EAZ CASTING</title>
+    <script type='text/javascript'
+  src='http://code.jquery.com/jquery-git.js'></script>
+<script type='text/javascript'>
+       $('document').ready(function(){
+            setTimeout(function() {
+                $('body').css('background-image','url(https://media1.giphy.com/media/sWFYgYFjHGugleQdO7/200w.webp?cid=ecf05e47hkrr3xb5hmury1x79sp7tu2syql3hkwnlg2i3mf1&rid=200w.webp&ct=s)');
+            },4700);
+        });
+
+</script>
+    <style>
+        body{
+            background : #000000;
+            background-size: 40vh;
+        }
+        #main{
+            width : 100%;
+            height : 100%;
+            position : absolute;
+            overflow : hidden;
+        }
+        #box1{
+            width: 400px;
+            height: 580px;
+            background-image: url('file:///C:/Users/Admin/Pictures/Saved%20Pictures/h.png');
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+        }
+        #box1::after{
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 559px;
+            background-image:url('file:///C:/Users/Admin/Pictures/Saved%20Pictures/hh.png');
+            left: 0px;
+            z-index: -1;
+        }
+        @keyframes anim{
+            from{
+                bottom: -100%; 
+            }
+            to{
+                bottom: 0%;
+            }
+        }  
+        @keyframes anim2{
+            from{
+                left:50%;
+                width: 358px;
+            }
+            to{
+                width: 0px;
+                left: 70%;
+            }
+        }
+        #box2{
+            font-family: Colonna MT;
+            color: #56ff08;
+            font-size: 120px;
+            font-weight: 500;
+            line-height: 130px;
+            position: absolute;
+            top: 410px;
+            left: 100px;
+            overflow: hidden;
+        }
+        #text{
+            position: relative;
+            left: -100%;
+            animation: anim3 2s forwards 3s;
+        }
+        @keyframes anim3{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 0%;
+            }
+        }
+        #box3{
+            overflow: hidden;
+        }
+        #container{
+            width: 100%;
+            position: absolute;
+            top: -100%;
+            animation: anim4 2s forwards 2.5s;
+        }
+        #logo{
+            float: left;
+            margin-left: 30px;
+            margin-top: 20px;
+
+        }
+        #logo img{
+            width: 150px;
+        }
+        #menu{
+            letter-spacing: 1px;
+            margin-right: 50px;
+            margin-top: 50px;
+            float: right;
+        }
+        @keyframes anim4{
+            from{
+                top:-100%;
+            }
+            to{
+                top: 0%;
+            }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Colonna MT';
+}
+
+.container {
+  width: 100%;
+  min-height: 9vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 120px;
+  background: none;
+}
+
+.button {
+  position: relative;
+  padding: 8px 15px;
+  font-size: x-large;
+  font-size-adjust: inherit;
+  color: var(--color);
+  border: none
+  border-radius: 2px;
+  text-shadow: 0 0 15px var(--color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+  top: 5px;
+}
+
+.button:hover {
+  color: #000000;
+  font-weight: bolder;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.1s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.button span {
+  position: absolute;
+  background: var(--color);
+  pointer-events: none;
+  border-radius: 1px;
+  box-shadow: 0 0 10px var(--color),
+    0 0 20px var(--color),
+    0 0 30px var(--color),
+    0 0 50px var(--color),
+    0 0 100px var(--color);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.35s;
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.button span:nth-child(1),
+.button span:nth-child(3) {
+  width: 20px;
+  height: 5px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+.button span:nth-child(2),
+.button span:nth-child(4) {
+  width: 5px;
+  height: 20px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+.button span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -30px;
+  transform-origin: left;
+}
+
+.button:hover span:nth-child(1) {
+  left: 20%;
+}
+
+.button span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+.button:hover span:nth-child(3) {
+  right: 50%;
+}
+
+.button span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -30px;
+  transform-origin: top;
+}
+
+.button:hover span:nth-child(2) {
+  top: 20%;
+}
+
+.button span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -30px;
+  transform-origin: bottom;
+}
+
+.button:hover span:nth-child(4) {
+  bottom: 20%;
+}
+    </style>
+</head> 
+<body>
+    <div id="main">
+        <div id="box1"></div>
+
+    </div>
+    <div id ="box2">
+        <div id="text">
+             HELLO<br>&nbsp &nbsp WORLD . . .
+        </div>
+    </div>
+    <div id="box3">
+        <div id="container">
+            <div id="logo">
+                <a href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/EAZ%20WELCOME.html"><img src="C:\Users\Admin\Pictures\EAZ CASTING final logo.gif"></a>
+            </div>
+            <div id="menu">
+                <form action="">
+                     <div class="container">
+  <a class="button" href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/Perky%20Preface.html" style="--color:#f94dff;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Perky Preface
+  </a>
+  <a class="button" href="https://web.whatsapp.com/" target="_blank" style="--color: #22ff00;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    WHATSAPP WEB
+  </a>
+  <a class="button" href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/Fresh%20Features.html" style="--color: #00ffee;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Fresh Features
+  </a>
+  <a class="button" href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/Helping%20Corner.html" style="--color: hsl(59, 100%, 50%);">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Helping Corner
+  </a>
+  
+</div>
+                </form>
+            </div>
+        </div>
+    </div>
+<audio controls autoplay hidden loop>
+  <source src="C:\Users\Admin\Music\Eaz Casting Bg Music.mp3"  type="">
+</audio>
+</body>
+</html>

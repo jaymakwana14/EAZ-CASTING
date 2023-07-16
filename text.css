@@ -1,0 +1,271 @@
+
+ @-webkit-keyframes text-flicker-out-glow {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255), 0 0 110px rgb(255, 255, 255), 0 0 100px rgba(255, 255, 255);
+    }
+    13.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255), 0 0 60px rgba(255, 255, 255,), 0 0 110px rgba(255, 255, 255,), 0 0 100px rgba(255, 255, 255);
+    }
+    14% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    14.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    15% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255,), 0 0 60px rgba(255, 255, 255), 0 0 110px rgba(255, 255, 255), 0 0 100px rgba(255, 255, 255);
+    }
+    22.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255,), 0 0 60px rgba(255, 255, 255), 0 0 110px rgba(255, 255, 255), 0 0 100px rgba(255, 255, 255);
+    }
+    23% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    24.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    25% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 238), 0 0 60px rgb(0, 238, 255), 0 0 100px rgb(0, 204, 255);
+    }
+    34.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 247, 255), 0 0 60px rgb(0, 225, 255), 0 0 100px rgba(3, 255, 251);
+    }
+    35% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    39.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    40% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(2), 0 0 60px rgba(2);
+    }
+    42.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(2), 0 0 60px rgba(2);
+    }
+    43% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    44.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255,), 0 0 60px rgba(255, 255,);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255,), 0 0 60px rgba(255, 255,);
+    }
+    54.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255,), 0 0 60px rgba(255, 255,);
+    }
+    55% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255), 0 0 60px rgba(255, 255, 255);
+    }
+    69.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255), 0 0 60px rgba(255, 255, 255);
+    }
+    70% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255);
+    }
+    80% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.8% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.9% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    90% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes text-flicker-out-glow {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 60), 0 0 60px rgb(38, 255, 0), 0 0 110px rgb(0, 255, 72), 0 0 100px rgb(68, 255, 0);
+    }
+    13.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 136), 0 0 60px rgb(0, 255, 13), 0 0 110px rgb(9, 255, 0), 0 0 100px rgb(26, 255, 0);
+    }
+    14% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    14.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    15% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(63, 255, 105), 0 0 60px rgb(34, 255, 0), 0 0 110px rgb(11, 255, 153), 0 0 100px rgb(255, 255, 255);
+    }
+    22.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 213, 255), 0 0 60px rgb(0, 242, 255), 0 0 110px rgb(1, 213, 255), 0 0 100px rgb(0, 255, 204);
+    }
+    23% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    24.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    25% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(234, 255, 0), 0 0 60px rgb(251, 255, 0), 0 0 100px rgb(255, 247, 0);
+    }
+    34.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 221), 0 0 60px rgb(0, 255, 251), 0 0 100px rgb(0, 217, 255);
+    }
+    35% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    39.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    40% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255);
+    }
+    42.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255);
+    }
+    43% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    44.9% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 157), 0 0 60px rgba(0, 255, 213, 0.748);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(98, 0, 255), 0 0 60px rgba(128, 0, 255, 0.771);
+    }
+    54.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 225, 255), 0 0 60px rgb(0, 251, 255);
+    }
+    55% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    69.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255);
+    }
+    69.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 191, 255), 0 0 60px rgb(5, 222, 255);
+    }
+    70% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.4% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    79.9% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgb(0, 255, 51);
+    }
+    80% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.8% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    89.9% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    90% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+.text {
+-webkit-animation: text-flicker-out-glow 2.5s linear infinite both;
+        animation: text-flicker-out-glow 2.5s linear infinite both;
+        margin-top:7.50%;
+        color: rgb(255, 255, 255);
+        font: 150px/1 'TeXGyreAdventorBold';
+        text-transform: none;
+        text-align: center;
+        font-family: Colonna MT;
+        font-size: 300%;    
+        position: absolute;
+        top: 21%;
+        left: 39%;
+        font-weight: bolder;
+        letter-spacing: 1mm;
+}
+
+

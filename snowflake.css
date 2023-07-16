@@ -1,0 +1,32 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+    background-color: black;
+}
+.ui-controls {
+	position: fixed;
+	top: 75%;
+	left: 60%;
+	user-select: none;
+	font-family: sans-serif;
+	text-align: end;
+}
+.ui-controls button {
+	background-color: transparent;
+	visibility: hidden;
+	cursor: pointer;
+}
+.title {
+	position: fixed;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 15px;
+	color: #00ff2a;
+	opacity: 0.5;
+	user-select: none;
+}

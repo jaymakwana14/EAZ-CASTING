@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fresh Features</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            background-image: url(https://media1.giphy.com/media/sWFYgYFjHGugleQdO7/200w.webp?cid=ecf05e47hkrr3xb5hmury1x79sp7tu2syql3hkwnlg2i3mf1&rid=200w.webp&ct=s);
+            background-color: black;
+            background-size: 40vh;
+        }
+        img{
+          width: 140px;
+          height:140px;
+          position: absolute;
+          left: 25px;
+          top: 25px;
+        }
+        .button {
+  position: relative;
+  left: 82%;
+  top: 70px;
+  padding: 8px 8px;
+  font-size: x-large;
+  font-size-adjust: inherit;
+  color: var(--color);
+  border: none
+  border-radius: 2px;
+  text-shadow: 0 0 15px var(--color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button:hover {
+  color: #000000;
+  font-weight: bolder;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.2s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.button span {
+  position: absolute;
+  background: var(--color);
+  pointer-events: none;
+  border-radius: 1px;
+  box-shadow: 0 0 10px var(--color),
+    0 0 20px var(--color),
+    0 0 30px var(--color),
+    0 0 50px var(--color),
+    0 0 100px var(--color);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.button span:nth-child(1),
+.button span:nth-child(3) {
+  width: 25px;
+  height: 4px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+.button span:nth-child(2),
+.button span:nth-child(4) {
+  width: 4px;
+  height: 20px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+.button span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -30px;
+  transform-origin: left;
+}
+
+.button:hover span:nth-child(1) {
+  left: 20%;
+}
+
+.button span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+.button:hover span:nth-child(3) {
+  right: 50%;
+}
+
+.button span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -30px;
+  transform-origin: top;
+}
+
+.button:hover span:nth-child(2) {
+  top: 20%;
+}
+
+.button span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -30px;
+  transform-origin: bottom;
+}
+
+.button:hover span:nth-child(4) {
+  bottom: 20%;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+  border-style: double;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 255, 38); 
+  border-radius: 10px;
+  border-style: double;
+  border-color: #6fff00;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 255, 77); 
+  border-style: double;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00fff7; 
+  }
+    </style>
+</head>
+<body>
+    <a class="button" href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/Fresh%20Features.html" style="--color: #00ffee;">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Fresh Features
+
+  <a href="file:///C:/Users/Admin/Desktop/EAZ%20CASTING/EAZ%20WELCOME.html"><img src="C:\Users\Admin\Pictures\EAZ CASTING final logo.gif"></a>
+
+    <br><br><br>
+    <div class="eyes">
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <link rel="stylesheet" href="eyes.css">
+      <script src="eye.js"></script>
+
+    <div class="text">FRESH FEATURES</div>
+    <link rel="stylesheet" href="text.css">
+    
+        <br><br><br><br><br><br><br>
+        <hr color="greenyellow" style="height: 5px; width: 70%;"><br><hr color="greenyellow" style="height: 5px; width: 80%;">
+
+        <p>
+            <h1 style="color: rgb(145, 255, 0); text-align: center; text-transform: uppercase; word-spacing: 10px; font-family: Colonna MT; font-weight: 100; font-size: 50px; line-height: 70px; padding-top: 5%;">Eaz Casting <br> Comes With The Following Features :-</h1>
+            <font style="color: rgb(145, 255, 0); font-size: 29px; line-height: 90px; margin-left: 30px; font-family: Consolas; word-spacing: 2px; letter-spacing: 2px; border-left: 20px; line-height: 110px;">
+              <br> &nbsp;&nbsp; 1. &nbsp;  Eazy Broadcasting.
+              <br> &nbsp;&nbsp; 2. &nbsp;  Without Saving The Number To The Contact List. 
+              <br> &nbsp;&nbsp; 3. &nbsp;  Helps In The Product or Service Marketing.
+              <br> &nbsp;&nbsp; 4. &nbsp;  User Can Also Add Attacments To the Text, i.e. : PDFs, Images, etc.
+              <br> &nbsp;&nbsp; 5. &nbsp;  Provides The Report Of The Messages Sent. 
+              <br> <br> &nbsp;
+               => The Feature You Think Lacks In Eaz Casting : <br>&nbsp;
+              <textarea name="Suggest Features" id="" cols="65" rows="1" style="color: greenyellow; background-color: #000000; border-color: greenyellow; font-size: 25px; font-family:Colonna MT; font-weight: 300; letter-spacing: 2px; word-spacing: 5px; text-transform: uppercase; border-radius: 30px; padding: 15px; border-width: 3px;"> Suggest Features Here</textarea>
+
+            </font>
+
+        </p>
+        <audio autoplay loop src="C:\Users\Admin\Music\fresh features bg music.mp3"></audio>
+</body>
+</html>
